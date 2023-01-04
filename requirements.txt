@@ -1,0 +1,6 @@
+torch
+torchvision
+nvgpu
+transformers
+diffusers
+numpy
