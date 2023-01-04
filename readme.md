@@ -1,9 +1,11 @@
 ## Installation
 
-1) pip install -r requirements.txt
-2) python download_models.py
-3) torch-model-archiver --model-name stable-diffusion --version 1.0 --handler handler.py --extra-files "diffusion_model.zip, promptist.zip"
-4) mkdir model_store && mv stable-diffusion.mar model_store/stable-diffusion.mar
+1) Make sure you have Nvidia driver and Cuda>=11.7 installed.
+2) pip install -r requirements.txt
+3) python download_models.py
+4) torch-model-archiver --model-name stable-diffusion --version 1.0 --handler handler.py --extra-files "diffusion_model.zip, promptist.zip"
+5) mkdir model_store && mv stable-diffusion.mar model_store/stable-diffusion.mar
+6) Install Java: sudo apt-get install -y openjdk-17-jdk
 ---
 ## Startup
 - To start: torchserve --start --ts-config config.properties --models all --model-store model_store 
